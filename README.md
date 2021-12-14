@@ -1,16 +1,9 @@
-# Motherfucking website starter
+# Kenney prototype asset colorer
 
-It's motherfucking opinionated.
+Gives color to the assets. Get the basic assets (already in six colors)
+here: https://www.kenney.nl/assets/prototype-textures
 
 ## How to use
 
-Drop it on a server with Node.js, run
-
-```bash
-node server.js
-```
-
-## Motherfucking inspired by
-
-1. https://motherfuckingwebsite.com
-1. https://bettermotherfuckingwebsite.com
+1. Download the assets and put them in the assets dir
+2. Run server.js. Or host it your way, I'm not your boss.
