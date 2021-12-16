@@ -16,4 +16,4 @@ jobs:
               with:
                   branch: gh-pages
                   folder: build
-                  single-commit: yes
+                  single-commit: true
