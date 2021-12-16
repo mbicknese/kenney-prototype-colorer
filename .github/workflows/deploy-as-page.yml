@@ -1,0 +1,19 @@
+name: Deploy to GitHub Pages
+on: [push]
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository code
+              uses: actions/checkout@v2
+            - run: mkdir build
+            - run: mkdir build/assets
+            - run: mv index.html build/
+            - run: wget https://www.kenney.nl/content/3-assets/28-prototype-textures/kenney_prototypetextures.zip
+            - run: unzip kenney_prototypetextures.zip -d build/assets
+            - name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@4.1.7
+              with:
+                  branch: gh-pages
+                  folder: build
+                  single-commit: yes
